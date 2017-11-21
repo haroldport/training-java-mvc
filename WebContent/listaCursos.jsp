@@ -17,6 +17,10 @@
 			</tr>
 		</c:forEach>
 	</table>
+	
+	<form action="ServletControlador/formularioInsertar">
+		<input type="submit" value="nuevo" />
+	</form>
 
 </body>
 </html>
