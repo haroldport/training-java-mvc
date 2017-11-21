@@ -32,11 +32,11 @@ public class ServicioCurso {
 		return null;
 	}
 	
-	public void addCurso(Curso curso) {
+	public void insertar(Curso curso) {
 		listaCursos.add(curso);
 	}
 	
-	public void removeCurso(Curso curso) {
+	public void borrar(Curso curso) {
 		listaCursos.remove(curso);
 	}
 
