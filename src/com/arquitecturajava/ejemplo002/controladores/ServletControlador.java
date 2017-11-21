@@ -36,6 +36,12 @@ public class ServletControlador extends HttpServlet {
 		} else if(accion.equals("formularioInsertar")) {
 			RequestDispatcher despachador = request.getRequestDispatcher("/formularioCurso.jsp");
 			despachador.forward(request, response);
+		} else if(accion.equals("borrar")) {
+			ServicioCurso sc = new ServicioCurso();
+			Curso c = new Curso(request.getParameter("nombre"), Integer.parseInt(request.getParameter("nivel")));
+			sc.removeCurso(c);
+			RequestDispatcher despachador = request.getRequestDispatcher("ServletControlador");
+			despachador.forward(request, response);
 		} else {
 			ServicioCurso sc = new ServicioCurso();
 			Curso c = new Curso(request.getParameter("nombre"), Integer.parseInt(request.getParameter("nivel")));

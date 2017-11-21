@@ -14,6 +14,13 @@
 			<tr>
 				<td><c:out value="${curso.nombre}" /></td>
 				<td><c:out value="${curso.nivel}" /></td>
+				<td>
+					<form method="post" action="ServletControlador/borrar">
+						<input type="hidden" name="nombre" value="${curso.nombre}" />
+						<input type="hidden" name="nivel" value="${curso.nivel}" />
+						<input type="submit" value="borrar" />
+					</form> 
+				</td>
 			</tr>
 		</c:forEach>
 	</table>

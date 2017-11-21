@@ -35,5 +35,9 @@ public class ServicioCurso {
 	public void addCurso(Curso curso) {
 		listaCursos.add(curso);
 	}
+	
+	public void removeCurso(Curso curso) {
+		listaCursos.remove(curso);
+	}
 
 }
