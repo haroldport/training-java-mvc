@@ -16,7 +16,7 @@ public class Servlet001 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nuevoNombre = request.getParameter("nombre").toUpperCase();
 		request.setAttribute("nombre", nuevoNombre);
-		RequestDispatcher despachador = request.getRequestDispatcher("Servlet002");
+		RequestDispatcher despachador = request.getRequestDispatcher("destino.jsp");
 		despachador.forward(request, response);
 	}
 
