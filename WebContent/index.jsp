@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<c:redirect url="ServletControlador" />
+	<c:redirect url="ServletControlador/lista" />
 
 </body>
 </html>

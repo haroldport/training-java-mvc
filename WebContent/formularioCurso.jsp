@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form method="post" action="ServletControlador/insertarCurso">
+	<form method="post" action="../ServletControlador/insertarCurso">
 		<p>Nombre: <input type="text" name="nombre" /></p>
 		<p>Nivel: <input type="text" name="nivel" /></p>
 		<p><input type="submit" value="aceptar" /></p>
