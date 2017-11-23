@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.arquitecturajava.ejemplo002.controladores.acciones.Accion;
 import com.arquitecturajava.ejemplo002.controladores.acciones.CursoBorrarAccion;
+import com.arquitecturajava.ejemplo002.controladores.acciones.CursoFiltrarNombre;
 import com.arquitecturajava.ejemplo002.controladores.acciones.CursoInsertarAccion;
 import com.arquitecturajava.ejemplo002.controladores.acciones.FormularioCursoAccion;
 import com.arquitecturajava.ejemplo002.controladores.acciones.ListaCursoAccion;
@@ -38,6 +39,9 @@ public class ServletControlador extends HttpServlet {
 			miAccion.ejecutar(request, response);
 		} else if(accion.equals("borrar")) {
 			miAccion = new CursoBorrarAccion();
+			miAccion.ejecutar(request, response);
+		} else if(accion.equals("filtrar")) {
+			miAccion = new CursoFiltrarNombre();
 			miAccion.ejecutar(request, response);
 		} else {
 			miAccion = new CursoInsertarAccion();

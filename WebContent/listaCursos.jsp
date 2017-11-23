@@ -9,6 +9,11 @@
 </head>
 <body>
 
+	<form method="post" action="../ServletControlador/filtrar">
+		<input type="text" name="filtroNombre" />
+		<input type="submit" value="filtrar" />
+	</form>
+
 	<table border="1px">
 		<c:forEach var="curso" items="${listaCursos}">
 			<tr>

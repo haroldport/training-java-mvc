@@ -32,6 +32,16 @@ public class ServicioCurso {
 		return null;
 	}
 	
+	public List<Curso> buscarPorNombre(String nombre) {
+		List<Curso> lista = new ArrayList<>();
+		for(Curso c: listaCursos) {
+			if(c.getNombre().toLowerCase().startsWith(nombre.toLowerCase())) {
+				lista.add(c);
+			}
+		}
+		return lista;
+	}
+	
 	public void insertar(Curso curso) {
 		listaCursos.add(curso);
 	}
