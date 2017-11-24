@@ -33,6 +33,7 @@ public class ServicioCurso {
 	}
 	
 	public List<Curso> buscarPorNombre(String nombre) {
+		if(nombre.equals("")) return buscarTodos();
 		List<Curso> lista = new ArrayList<>();
 		for(Curso c: listaCursos) {
 			if(c.getNombre().toLowerCase().startsWith(nombre.toLowerCase())) {

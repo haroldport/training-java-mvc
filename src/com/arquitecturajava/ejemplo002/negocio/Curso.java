@@ -1,5 +1,8 @@
 package com.arquitecturajava.ejemplo002.negocio;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Curso {
 	
 	private String nombre;
